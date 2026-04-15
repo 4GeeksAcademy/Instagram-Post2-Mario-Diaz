@@ -90,3 +90,21 @@ b {
     padding: 0 15px 15px 15px;
     font-size: 14px;
 }
+
+
+.heart-button {
+    cursor: pointer;
+    transition: color 0.2s ease;
+    display: inline-block;
+}
+
+.heart-button.is-active {
+    color: #eb3544;
+    animation: heart-jump 0.45s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+}
+
+@keyframes heart-jump {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
